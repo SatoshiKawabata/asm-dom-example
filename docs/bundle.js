@@ -273,7 +273,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 customElements.define('web-component', __WEBPACK_IMPORTED_MODULE_1__components_web_component__["a" /* default */]);
 
-__WEBPACK_IMPORTED_MODULE_0_asm_dom___default()().then(asmDom => {
+__WEBPACK_IMPORTED_MODULE_0_asm_dom___default()({
+  unsafePatch: true
+}).then(asmDom => {
   const { h, patch } = asmDom;
   const root = document.getElementById('root');
   const vnode = h('web-component', {}, []);
